@@ -12,7 +12,91 @@
 </head>
 
 <body>
-    <h1>hello world</h1>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#aboutme" class="navigation__link">
+                        <span>01</span>About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#ourbenefits" class="navigation__link">
+                        <span>02</span>Portfolio</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-tours" class="navigation__link">
+                        <span>03</span>Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main"> David Kang</span>
+                <span class="heading-primary--sub"> Hello, I'm a full-stack web developer</span>
+            </h1>
+
+            <a href="#section-tours" class="btn btn--white btn--animated">Check my work</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about" id="aboutme">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    About Me
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Just one word to describe me..</h3>
+                    <p class="paragraph">
+                        Disciplined. Focused. Passionate. Loves to learn new technology.
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">A few more words..</h3>
+                    <p class="paragraph">
+                        My favorite part of the day is when I can sit down in front of my computer and write code. But the most satisfying feeling
+                        would be that 'ah-hah' moment after spending hours banging my head against the wall trying to solve
+                        a problem.
+                        <br> Currently, I am eager to find a company where I can make a big impact using my skills to solve problems
+                        and positively contribute to the work culture. I desire to continue to challenge myself everyday
+                        and grow as a developer.
+                    </p>
+
+                    <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="img/dkheadshot.jpg" alt="photo1" class="composition__photo composition__photo--p1">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+        const navigation = document.querySelector('.navigation')
+        const navCheckbox = navigation.querySelector('.navigation__checkbox')
+        const navItems = navigation.querySelectorAll('.navigation__item')
+        navItems.forEach(item =>
+            item.addEventListener('click', _ => navCheckbox.checked = false))
+    </script>
 </body>
+
+
 
 </html>
