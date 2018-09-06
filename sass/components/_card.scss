@@ -34,6 +34,9 @@
             &-3 {
                 background-color: $color-white;
             }
+            &-4 {
+                background-color: $color-white;
+            }
         }
     }
 
@@ -62,6 +65,9 @@
        
         &--3 {
             background-image: url('../../img/commerce.png');
+        }
+        &--4 {
+            background-image: url('../../img/github1.png');
         }
 
     }

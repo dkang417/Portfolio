@@ -636,6 +636,8 @@ body {
         background-color: #EDF5E1; }
       .card__side--back-3 {
         background-color: #EDF5E1; }
+      .card__side--back-4 {
+        background-color: #EDF5E1; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -652,6 +654,8 @@ body {
       background-image: url("../../img/softball.png"); }
     .card__picture--3 {
       background-image: url("../../img/commerce.png"); }
+    .card__picture--4 {
+      background-image: url("../../img/github1.png"); }
   .card__details {
     padding: 1rem;
     margin-left: .5rem; }
