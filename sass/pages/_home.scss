@@ -1,5 +1,5 @@
 .section-about {
-    background-color: $color-grey-light-1;
+    background-color: white;
     padding: 25rem 0;
     margin-top: -20vh;
     padding-left: 3rem;
@@ -18,9 +18,9 @@
     padding:20rem 0;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.801),
-        rgba($color-primary-dark, 0.801)), 
-    url(../img/nat-4.jpg);
+        rgba($color-primary-light, 0.951),
+        rgba($color-primary-light, 0.651)), 
+    url(../img/nyc3.jpg);
     background-size: cover;
     // skew 
     transform: skewY(-7deg);
@@ -36,13 +36,31 @@
 }
 
 .section-tours {
-    background-color:  $color-grey-light-1;
-    padding: 25rem 0 15rem 0;
-    margin-top: -10rem;
+    margin-top: -10vh;
+    padding:20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.951),
+        rgba($color-primary-light, 0.651)), 
+    url(../img/nyc3.jpg);
+    background-size: cover;
+    // skew 
+    transform: skewY(-7deg);
+    // selects all direct childs of section featues and straightens out
+    & > * {
+        transform: skewY(7deg);
+    }
 
     @include respond(tab-port) {
-        padding: 20rem 0 10rem 0;
+        padding: 15rem 0;
     }
+    // background-color:  $color-grey-light-1;
+    // padding: 25rem 0 15rem 0;
+    // margin-top: -10rem;
+
+    // @include respond(tab-port) {
+    //     padding: 20rem 0 10rem 0;
+    // }
 }
 
 .section-stories {
