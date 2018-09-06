@@ -37,6 +37,9 @@
             &-4 {
                 background-color: $color-white;
             }
+            &-5 {
+                background-color: $color-white;
+            }
         }
     }
 
@@ -68,6 +71,9 @@
         }
         &--4 {
             background-image: url('../../img/github1.png');
+        }
+        &--5 {
+            background-image: url('../../img/dashboard1.png');
         }
 
     }
