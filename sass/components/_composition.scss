@@ -28,13 +28,12 @@
         }
 
      
-        // &:hover {
-        //     outline: .5rem solid $color-primary;
-        //     border-radius: 20px;
-        //     transform: scale(1.01) translateY(-.4rem);
-        //     box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
-        //     z-index: 20;
-        // }
+        &:hover {
+            border-radius: 20px;
+            transform: scale(1.01) translateY(-.4rem);
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
     }
 
 }

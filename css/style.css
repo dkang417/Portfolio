@@ -586,6 +586,11 @@ body {
         .composition__photo--p1 {
           top: 0;
           transform: scale(1.01) translateY(-0.4rem); } }
+    .composition__photo:hover {
+      border-radius: 20px;
+      transform: scale(1.01) translateY(-0.4rem);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
 
 .card {
   perspective: 150rem;
@@ -627,12 +632,14 @@ body {
       background-image: url("../../img/bikes.png"); }
     .card__picture--2 {
       background-image: url("../../img/softball.png"); }
+    .card__picture--3 {
+      background-image: url("../../img/commerce.png"); }
   .card__details {
     padding: 1rem;
     margin-left: .5rem; }
     .card__details img {
-      width: 280px;
-      height: auto; }
+      width: auto;
+      height: 300px; }
     .card__details ul {
       list-style: none;
       width: 80%;
@@ -655,14 +662,8 @@ body {
     color: #f7f7f7;
     margin-bottom: 8rem; }
   .card__price-box img {
-    width: auto;
-    height: 250px; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
+    width: 260px;
+    height: auto; }
   @media (max-width: 56.25em) {
     .card {
       height: auto;
@@ -727,8 +728,7 @@ body {
     padding: 3rem 5rem; }
   .popup__img {
     display: block;
-    width: 100%;
-    margin-top: 2em; }
+    width: 100%; }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;

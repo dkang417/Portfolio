@@ -59,8 +59,12 @@
         &--2 {
             background-image: url('../../img/softball.png');
         }
-    }
+       
+        &--3 {
+            background-image: url('../../img/commerce.png');
+        }
 
+    }
 
     &__details {
         padding: 1rem;
@@ -68,8 +72,8 @@
 
 // image of project 
         img {
-            width: 280px;
-            height: auto;
+            width: auto;
+            height: 300px;
            
         }
         ul {
@@ -77,7 +81,6 @@
             width: 80%;
             margin: 0 auto;
             
-
             li {
                 text-align: center;
                 font-size: 1.5rem;
@@ -109,23 +112,14 @@
     // back of card picture 
 
     &__price-box img {
-        width: auto;
-        height: 250px;
+        width: 260px;
+        height: auto;
        
     }
 
     
     
 
-    &__price-only {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-    }
-
-    &__price-value {
-        font-size: 6rem;
-        font-weight: 100;
-    }
 
 
 
