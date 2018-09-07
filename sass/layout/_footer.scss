@@ -7,7 +7,7 @@
     @include respond(tab-port) {
         padding: 8rem 0;
     }
-
+   
    
 
     &__navigation {
@@ -19,7 +19,13 @@
         @include respond(tab-port) {
             width: 100%;
             text-align: center;
+            padding-left: 1rem;
         }
+
+        @include respond(phone) {
+           padding-left: 1rem;
+        }
+    
     }
 
 
