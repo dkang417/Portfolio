@@ -69,7 +69,6 @@
     &__img {
         display: block;
         width: 100%;
-        // margin-top: 2em;
         @include respond(tab-land) {
             // width: 45%;
             // display: inline-block;
