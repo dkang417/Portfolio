@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-grey-dark-3;
-    padding: 10rem 0;
+    padding: 8rem 0;
     font-size: 1.4rem;
     color: $color-grey-light-1;
 
@@ -8,23 +8,12 @@
         padding: 8rem 0;
     }
 
-    &__logo-box {
-        text-align: center;
-        margin-bottom: 8rem;
-
-        @include respond(tab-port) {
-            margin-bottom: 6rem;
-        }
-    }
-
-    &__logo {
-        width: 15rem;
-        height: auto;
-    }
+   
 
     &__navigation {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
+        padding-left: 5rem;
         display: inline-block;
 
         @include respond(tab-port) {
@@ -65,7 +54,7 @@
         }
     }
 
-    &__copyright {
+    &__email {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         width: 80%;

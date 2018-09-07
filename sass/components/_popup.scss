@@ -15,11 +15,7 @@
    // CLOSED STATE
     &__content {
         @include absCenter;
-        // above code includes absolute center
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
+      
         width: 65%;
         background-color: $color-white;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
