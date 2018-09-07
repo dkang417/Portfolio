@@ -1,19 +1,25 @@
 .footer {
     background-color: $color-grey-dark-3;
-    padding: 8rem 0;
+    padding: 4rem 0;
     font-size: 1.4rem;
     color: $color-grey-light-1;
 
     @include respond(tab-port) {
-        padding: 8rem 0;
+        padding: 3rem;
     }
-   
+     @include respond(tab-land) {
+        padding: 3rem;
+    }
+    @include respond(phone) {
+        padding: 1rem;
+    }
    
 
     &__navigation {
         border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        padding-left: 5rem;
+      
+        padding-left: 3rem;
+        padding-right: 2rem;
         display: inline-block;
 
         @include respond(tab-port) {
@@ -31,6 +37,10 @@
 
     &__list {
         list-style: none;
+        margin-top: 2rem;
+        @include respond (phone) {
+            padding-top: 4rem;
+        }
     }
 
     &__item {
@@ -62,13 +72,15 @@
 
     &__email {
         border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
         width: 80%;
         float: right;
 
         @include respond(tab-port) {
             width: 100%;
             float: none;
+        }
+        @include respond(phone) {
+            padding-bottom: 2rem;
         }
     }
 }
