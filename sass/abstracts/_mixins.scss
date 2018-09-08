@@ -13,7 +13,8 @@
     transform: translate(-50%, -50%);
 }
 
-// MEDIA QUERY MANAGER
+// MEDIA QUERY 
+
 /*
 
 0-600px:  Phone     max-width
@@ -30,7 +31,7 @@ $breakpoint argument choices:
 
 1 em = 16px 
 
-order: base + typograypy > general layout + grid > page layout > components
+order: base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {

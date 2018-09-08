@@ -14,7 +14,7 @@ $breakpoint argument choices:
 
 1 em = 16px 
 
-order: base + typograypy > general layout + grid > page layout > components
+order: base + typography > general layout + grid > page layout > components
 */
 *,
 *::after,
@@ -198,6 +198,9 @@ body {
     .row {
       max-width: 50rem;
       padding: 0 3rem; } }
+  @media (max-width: 37.5em) {
+    .row {
+      margin-left: -1rem; } }
   .row::after {
     content: "";
     display: table;
@@ -532,6 +535,12 @@ body {
   .btn--green {
     background-color: #379683;
     color: #EDF5E1; }
+    @media (max-width: 37.5em) {
+      .btn--green {
+        margin-top: -1.5rem; } }
+    @media (max-width: 56.25em) {
+      .btn--green {
+        margin-top: -1.5rem; } }
     .btn--green::after {
       background-color: #5CDB95; }
   .btn::after {
@@ -667,12 +676,12 @@ body {
     color: #EDF5E1; }
     .card__details ul {
       list-style: none;
-      width: 80%;
+      width: 85%;
       margin: 0 auto; }
       .card__details ul li {
         text-align: center;
         font-size: 1.5rem;
-        padding: 1rem; }
+        padding: .4rem; }
   @media (max-width: 56.25em) {
     .card {
       height: auto;
@@ -798,6 +807,9 @@ body {
       width: 100%;
       padding: 4rem;
       padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .edu {
+      margin-left: -2rem; } }
   .edu__caption {
     position: absolute;
     top: 50%;
