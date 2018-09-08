@@ -28,11 +28,11 @@
         }
 
         &:focus:invalid {
-            border-bottom: 3px solid $color-secondary-dark;
+            border-bottom: 3px solid $color-blue-dark;
         }
 
         &::-webkit-input-placeholder {
-            color: $color-grey-dark-2;
+            color: $color-blue-dark;
         }
     }
 

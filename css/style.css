@@ -136,10 +136,8 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #8EE4AF, #379683);
-  -webkit-background-clip: text;
   letter-spacing: 2px;
-  color: transparent;
+  color: #379683;
   transition: all .2s; }
   @media (max-width: 56.25em) {
     .heading-secondary {
@@ -147,9 +145,6 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
-  .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rba(#000, 0.2); }
 
 .heading-last {
   font-size: 3.5rem;
@@ -165,19 +160,14 @@ body {
   @media (max-width: 37.5em) {
     .heading-last {
       font-size: 2.5rem; } }
-  .heading-last:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rba(#000, 0.2); }
 
 .heading-secondary-white {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #EDF5E1, #f7f7f7);
-  -webkit-background-clip: text;
   letter-spacing: 2px;
-  color: transparent;
+  color: #EDF5E1;
   transition: all .2s; }
   @media (max-width: 56.25em) {
     .heading-secondary-white {
@@ -185,9 +175,6 @@ body {
   @media (max-width: 37.5em) {
     .heading-secondary-white {
       font-size: 2.5rem; } }
-  .heading-secondary-white:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rba(#000, 0.2); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -244,13 +231,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(142, 228, 175, 0.951), rgba(142, 228, 175, 0.651)), url(../img/nyc.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative; }
-  @media (max-width: 37.5em) {
-    .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 40px;
@@ -269,7 +250,7 @@ body {
   background-color: #05386b;
   padding: 4rem 0;
   font-size: 1.4rem;
-  color: #f7f7f7; }
+  color: white; }
   @media (max-width: 56.25em) {
     .footer {
       padding: 3rem; } }
@@ -303,7 +284,7 @@ body {
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
   .footer__link:link, .footer__link:visited {
-    color: #f7f7f7;
+    color: white;
     background-color: #05386b;
     text-decoration: none;
     text-transform: uppercase;
@@ -311,8 +292,7 @@ body {
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
     color: #5CDB95;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(5deg) scale(1.3); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
   .footer__email {
     border-top: 1px solid #05386b;
     width: 80%;
@@ -477,10 +457,7 @@ body {
   margin-top: -10vh;
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(142, 228, 175, 0.851), rgba(55, 150, 131, 0.901)), url(../img/nyc3.jpg);
-  background-size: cover;
-  transform: skewY(-7deg); }
-  .section-projects > * {
-    transform: skewY(7deg); }
+  background-size: cover; }
   @media (max-width: 56.25em) {
     .section-projects {
       padding: 15rem 0; } }
@@ -696,8 +673,6 @@ body {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem; }
-        .card__details ul li:not(:last-child) {
-          border-bottom: 1 px solid #eee; }
   @media (max-width: 56.25em) {
     .card {
       height: auto;
@@ -817,23 +792,12 @@ body {
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
-  font-size: 1.6rem;
-  transform: skewX(-12deg); }
+  font-size: 1.6rem; }
   @media (max-width: 56.25em) {
     .edu {
       width: 100%;
       padding: 4rem;
       padding-left: 7rem; } }
-  @media (max-width: 37.5em) {
-    .edu {
-      transform: translateX(-3rem) skewX(0); } }
-  .edu > * {
-    transform: skew(-12deg); }
-  .edu__text {
-    transform: skewX(12deg); }
-    @media (max-width: 37.5em) {
-      .edu__text {
-        transform: skewX(0); } }
   .edu__caption {
     position: absolute;
     top: 50%;
@@ -875,7 +839,7 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #5CDB95; }
   .form__input:focus:invalid {
-    border-bottom: 3px solid #ff7730; }
+    border-bottom: 3px solid #05386b; }
   .form__input::-webkit-input-placeholder {
     color: #05386b; }
 

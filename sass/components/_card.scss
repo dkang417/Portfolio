@@ -21,12 +21,12 @@
         
 
         &--front {
-            background-color: $color-grey-dark;
+            background-color: $color-blue-dark;
         }
 // BACK OF CARD
         &--back {
             transform: rotateY(180deg);
-            background-color: $color-grey-dark;
+            background-color: $color-blue-dark;
         }
     }
 
@@ -123,9 +123,9 @@
                
                
                 
-                &:not(:last-child) {
-                    border-bottom: 1 px solid $color-grey-light-2;
-                }
+                // &:not(:last-child) {
+                //     border-bottom: 1 px solid $color-blue-light-2;
+                // }
             }
         }
     }
