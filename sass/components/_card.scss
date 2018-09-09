@@ -17,6 +17,7 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden;
+        
         border-radius: 3px;
         overflow: hidden;
         
@@ -40,12 +41,16 @@
     }
     // front side styling  - picture for front of the card
 
+    
+
     &__picture {
         background-size: cover;
         height: 26rem;
         background-blend-mode: screen;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0,100% 85%, 0 100%);
         &--1 {
             background-image: url('../../img/bikes.png');
         }
@@ -121,6 +126,7 @@
                 text-align: center;
                 font-size: 1.5rem;
                 padding:.4rem;
+
                
             }
         }
